@@ -1,5 +1,5 @@
 {
-    "name": "datepicker",
+    "name": "@livechat/webview-datepicker-extension",
     "version": "0.1.0",
     "private": true,
     "scripts": {
@@ -45,11 +45,6 @@
         },
         "parserOptions": {
             "parser": "babel-eslint"
-        }
-    },
-    "postcss": {
-        "plugins": {
-            "autoprefixer": {}
         }
     },
     "browserslist": [
