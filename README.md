@@ -33,6 +33,12 @@ npm install
 npm run bootstrap
 ```
 
+### Build single example
+```
+cd <example-name>
+npm run build
+```
+
 ### Build all examples in parallel
 ```
 npm run build
