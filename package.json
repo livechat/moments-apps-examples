@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/livechat/widget-webview-extensions#readme",
   "dependencies": {
-    "@livechat/extension-sdk": "0.0.1-unsafe.1",
+    "@livechat/moments-sdk": "0.0.1-unsafe.10",
     "v-calendar": "^0.9.7",
     "vue": "^2.5.21"
   },
