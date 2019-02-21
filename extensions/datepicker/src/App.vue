@@ -42,7 +42,7 @@ export default {
     async created () {
         createMomentsSDK({
             title: 'Date picker',
-            icon: `${window.location}/icon.svg`
+            icon: `${window.location.origin}${window.location.pathname}/icon.svg`
         }).then(momentsSDK => {
             this.momentsSDK = momentsSDK
         })
