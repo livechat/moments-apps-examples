@@ -1,6 +1,5 @@
 # Moments
 
-## Introduction
 Moments allow you to show any web application during a chat and let customers perform specific actions.
 
 ## How it works?
