@@ -21,6 +21,24 @@ App written in Vue, allows a customer to pick any date from date picker. It send
 
 Preview is deployed [here](https://cdn.livechat-static.com/widget-webview-extensions/datepicker/).
 
+## Developing
+
+### Install dependencies
+```
+npm install
+```
+
+### Bootstrap project using lerna
+```
+npm run bootstrap
+```
+
+### Build all examples in parallel
+```
+npm run build
+```
+
+
 ## Feedback
 
 In case of any issues or feature requests send them on https://www.livechatinc.com/community

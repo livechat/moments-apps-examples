@@ -8,6 +8,7 @@ App written in Vue, allows a customer to pick any date from datepicker. It sends
 
 ## Getting started
 
+### Install dependencies
 ```
 npm install
 ```
