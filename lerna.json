@@ -1,6 +1,6 @@
 {
   "packages": [
-    "extensions/*"
+    "examples/*"
   ],
   "command": {
     "bootstrap": {
