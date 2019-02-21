@@ -6,8 +6,8 @@ App written in Vue, allows a customer to pick any date from datepicker. It sends
     <img width="256" src="public/screen.png" />
 </center>
 
-# Getting started
-## Project setup
+## Getting started
+
 ```
 npm install
 ```
