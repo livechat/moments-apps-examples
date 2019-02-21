@@ -1,44 +1,50 @@
 <template>
     <div id="app">
-        <v-date-picker is-inline is-expanded
+        <v-date-picker
+               is-inline
+               is-expanded
                :tint-color="theme"
                :show-day-popover="false"
-               v-model="selectedDate"/>
-
-        <button class="select" :disabled="!selectedDate"
-                :style="{ background: theme }"
-                @click="select">
+               v-model="selectedDate"
+        />
+        <button
+            class="select"
+            :disabled="!selectedDate"
+            :style="{ background: theme }"
+            @click="select"
+        >
             Select date
         </button>
     </div>
 </template>
 
 <script>
-import createExtensionSDK from '@livechat/extension-sdk/es5'
+import createMomentsSDK from '@livechat/moments-sdk/es5'
 
 export default {
     data () {
         return {
             theme: '#333333',
-            sdk: null,
+            momentsSDK: null,
             selectedDate: null
         }
     },
     methods: {
         select () {
-            if (!this.selectedDate || !this.sdk) {
+            if (!this.selectedDate || !this.momentsSDK) {
                 return
             }
 
-            this.sdk.sendMessage({ text: this.selectedDate.toLocaleDateString() })
-            this.sdk.closeWebView()
+            this.momentsSDK.sendMessage({ text: this.selectedDate.toLocaleDateString() })
+            this.momentsSDK.close()
         }
     },
     async created () {
-        createExtensionSDK({
-            title: 'Custom frame title'
-        }).then(sdk => {
-            this.sdk = sdk
+        createMomentsSDK({
+            title: 'Date picker',
+            icon: `${window.location}/icon.svg`
+        }).then(momentsSDK => {
+            this.momentsSDK = momentsSDK
         })
     }
 }
