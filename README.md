@@ -19,7 +19,7 @@ Moments allow you to show any web application during a chat and let customers pe
 App written in Vue, allows a customer to pick any date from date picker. It sends a chosen option back to a chat. Give the customer an option to choose the available term. Send a message with “choose term” button, open web application with data picker component, then send back chosen term to chat conversation as customer’s message.
 
 
-Preview is deployed [here](https://cdn.livechat-static.com/widget-webview-extensions/datepicker/).
+You can see the preview [here](https://cdn.livechat-static.com/moments-apps-examples/datepicker/).
 
 ## Developing
 
